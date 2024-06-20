@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Ex2 {
 
-    public static void bubbleSort(ArrayList<String> list) {
+    public ArrayList<String>  bubbleSort(ArrayList<String> list) {
         int n = list.size();
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - 1 - i; j++) {
@@ -16,6 +16,7 @@ public class Ex2 {
                 }
             }
         }
+        return list;
     }
 
     public static void main(String[] args) {
@@ -32,9 +33,6 @@ public class Ex2 {
         Collections.sort(list);
 
         System.out.println("List after sort: " + list);
-
-       int i = list.get(0).compareTo(list.get(1));
-        System.out.println(i);
 
     }
 }
